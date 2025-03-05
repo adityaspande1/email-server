@@ -26,7 +26,12 @@ const sendEmail = async (req, res) => {
             from: process.env.SMTP_EMAIL,
             to: email,  // Send confirmation to user
             subject: "Message Received - Aditya's Portfolio",
-            text: `Hello ${name},\n\nThank you for reaching out! I have received your message and will get back to you soon.\n\nBest Regards,\nAditya Pande`
+            text: `Hello ${name},
+
+    Thank you for reaching out! I have received your message and will get back to you soon.
+
+    Best Regards,
+    Aditya Pande`
         });
 
         // Send email to yourself
